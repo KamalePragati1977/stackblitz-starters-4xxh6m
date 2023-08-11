@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
   // avatar:string="https://e0.pxfuel.com/wallpapers/61/978/desktop-wallpaper-cute-baby-cat-cute-cat-kitten-thumbnail.jpg"
   title = 'Tour of Heroes';
 
-  heroes = HEROES;
+  // heroes = HEROES;
 
   constructor() {}
 

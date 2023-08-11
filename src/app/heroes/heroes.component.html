@@ -7,11 +7,13 @@
 </div> -->
 <!-- <h2>My Heroes</h2> -->
 <ul class="heroes">
-  <li>
-    <button type="button">
+  <!-- <li *ngIf="hero.id % 2 ==0"> -->
+  <!-- <li *ngIf="geteven()"> -->
+    <li *ngFor="let hero of heroes">
+    <button type="button"(click)="onselect(hero)">
       <span class="badge">{{ hero.id }}</span>
       <span class="name">{{ hero.name }}</span>
     </button>
   </li>
 </ul>
-*ngIf="expression resulting to true or false"
+<!-- *ngIf="expression resulting to true or false" -->
