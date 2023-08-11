@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Hero } from '../hero';
 import { HEROES } from '../mock-heroes';
@@ -17,8 +17,9 @@ export class HeroesComponent implements OnInit {
   //   name: 'Prakash',
   // };
   // heroes=HEROES;
-  // constructor() {}
-  @Input() hero: Hero;
+  @Input() hero!: Hero;
+
+  constructor() {}
 
   ngOnInit() {}
 }
