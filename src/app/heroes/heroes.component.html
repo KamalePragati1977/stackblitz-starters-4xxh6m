@@ -9,8 +9,12 @@
 <ul class="heroes">
   <!-- <li *ngIf="hero.id % 2 ==0"> -->
   <!-- <li *ngIf="geteven()"> -->
-    <li *ngFor="let hero of heroes">
-    <button type="button"(click)="onselect(hero)">
+  <li *ngFor="let hero of heroes">
+    <button
+      type="button"
+      [class.selected]="hero === selectedHero"
+      (click)="onselect(hero)"
+    >
       <span class="badge">{{ hero.id }}</span>
       <span class="name">{{ hero.name }}</span>
     </button>
@@ -18,12 +22,11 @@
 </ul>
 <!-- *ngIf="expression resulting to true or false" -->
 
-
 <div *ngIf="selectedHero">
-  <h2>{{selectedHero.name | uppercase}} Details</h2>
-  <div>id: {{selectedHero.id}}</div>
+  <h2>{{ selectedHero.name | uppercase }} Details</h2>
+  <div>id: {{ selectedHero.id }}</div>
   <div>
     <label for="hero-name">Hero name: </label>
-    <input id="hero-name" [(ngModel)]="selectedHero.name" placeholder="name">
+    <input id="hero-name" [(ngModel)]="selectedHero.name" placeholder="name" />
   </div>
 </div>

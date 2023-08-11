@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Hero } from '../hero';
+import { HeroDetailComponent } from '../hero-detail/hero-detail.component';
 import { HEROES } from '../mock-heroes';
 
 @Component({
