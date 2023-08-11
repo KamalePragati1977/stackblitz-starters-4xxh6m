@@ -25,7 +25,7 @@
 }
 
 .heroes button:hover {
-  color: #2c3a41;
+  color:black;
   background-color: #e6e6e6;
   left: .1em;
 }

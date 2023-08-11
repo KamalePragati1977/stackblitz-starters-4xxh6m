@@ -17,6 +17,7 @@ export class HeroesComponent implements OnInit {
   //   name: 'Prakash',
   // };
    heroes=HEROES;
+   selectedHero?:Hero;
   // @Input() hero!: Hero;
   // even: boolean=false;
 
@@ -24,6 +25,8 @@ export class HeroesComponent implements OnInit {
   //  geteven(){
   //   return this.hero.id%2 !=0;
   //  }  
-  onselect(hero:Hero){}
+  onselect(hero:Hero){
+    this.selectedHero=hero;
+  }
   ngOnInit() {}
 }
